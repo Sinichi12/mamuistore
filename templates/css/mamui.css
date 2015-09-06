@@ -47,16 +47,19 @@ header{
 }
 .navBox{
 	width:100%;
+	position:relative;
 }
 .filterBox{
-	width:75%;
-	float:left;
+	width:100%;
+}
+.filterBox ul{
+	padding-left:7px;
 }
 .filterBox ul li{
-	width:33.3333%;
+	width:220px;
 	display:block;
 	float:left;
-	padding:0 20px 0 0;
+	margin-right:20px;
 }
 .filterTag,
 .filterCat,
@@ -65,13 +68,28 @@ header{
 	padding:0 20px 0 0;
 }
 .searchBox{
-	width:25%;
-	float:left;
+	width:220px;
+	position:absolute;
+	top:0;
+	right:12px;
+	border:1px solid #289EDE;
 }
 .searchBox input[type="text"]{
-	width:100%;
+	width:180px;
 	height:30px;
-	border:1px solid #289EDE;
+	padding:0 10px;
+	border:none;
+	float:left;
+	display:block;
+}
+.searchBtn{
+	width:30px;
+	height:30px;
+	float:left;
+	display:block;
+	background:url(../images/icon_magnifier.png) no-repeat top center;
+	background-size:cover;
+	text-indent:-9999px;
 }
 section{
 	width:100%;
@@ -154,14 +172,12 @@ section{
 	width:20px;
 	height:20px;
 	display:block;
-	box-shadow:0 0 2px #000;
-	color:#999;
+	color:#1F1F1F;
 	border-radius:10px;
 }
 .paging ul li a:hover,
 .paging ul li a.selected{
 	color:#289EDE;
-	box-shadow:0 0 2px #289EDE;
 }
 .popupWrapper{
 	width:100%;
